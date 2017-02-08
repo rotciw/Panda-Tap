@@ -912,12 +912,13 @@ figure:hover div {
 background-color: #0B476B;
 opacity: 0.9;
 white-space: nowrap;
-margin-left: -12.5vw;
+
+margin-left: -12vw;
 border: solid;
 border-color:#0B476B;
 width: 13.5vmin;
-border-width: 0.2vmin;
-position:fixed;
+border-width: 2vmin;
+position:absolute;
      -webkit-box-shadow: -7px 0px 12px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: -7px 0px 12px 0px rgba(0,0,0,0.37);
     box-shadow: -7px 0px 12px 0px rgba(0,0,0,0.37);
