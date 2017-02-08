@@ -18,7 +18,7 @@ $(document).ready(function(){
         this.dmg = dmg;
         this.bonusMon = bonusMon;
     }
-    var player = new Player("Hello", 0,0,0,1,1,0);
+    var player = new Player("Hello", 10000,0,0,1,1,0);
     //making the boss class
     function Boss (name, hp, timer, kills, maxhp, speed){
         this.name = name;
@@ -656,7 +656,11 @@ $(document).ready(function(){
             if (sensei.timesUp < 4){
                 $("#heroUpgrade3").prop('disabled', false);
             }
+            if (boss.kills < 15) {
+                 player.money=player.money+30*player.moneyPerSec;
+            } else {
             player.money=player.money+60*player.moneyPerSec;
+            }
         }
         
     });
