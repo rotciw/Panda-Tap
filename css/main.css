@@ -56,12 +56,12 @@ a:focus {outline:0!important;}
 }
 
 .hero {
-    height: 33vh;
+    height: 33.16vh;
 	width: 33.33vh;
 	position: absolute;
 }
 .heroupgrade {
-    height: 50vh;
+    height: 49.84vh;
 	width: 33.33vh;
 }
 
@@ -203,6 +203,7 @@ a:focus {outline:0!important;}
     cursor:pointer;
     overflow: hidden;
      transition: 300ms linear;
+      -webkit-transition: 500ms all ease;
     /*Limit stretching*/ 
     max-height: 100%;
     max-width: 100%;
@@ -303,6 +304,7 @@ background: url('../images/UpgradeButtons/ninjaPanda.png') no-repeat;
     cursor:pointer;
     overflow: hidden;
        transition: 300ms linear;
+     -webkit-transition: 500ms all ease;
     /*Limit stretching*/ 
     max-height: 100%;
     max-width: 100%;
@@ -412,6 +414,7 @@ background: #0B476B;
 color: white;
 width: 100%;
 text-align: center;
+ -webkit-transition: 500ms all ease;
 transition: 500ms all ease;
 border:none;
 outline: none;
@@ -494,6 +497,7 @@ outline: none;
     border:none;
     outline: none;
     transition: 500ms all ease;
+     -webkit-transition: 500ms all ease;
     right:3em;
   vertical-align: top;
 }
@@ -1000,6 +1004,7 @@ font-family: 'Iceland', cursive;
 }
 div.dimmed a:hover {
      transition: 500ms linear;
+     -webkit-transition: 500ms all ease;
     -webkit-animation: neon2 0.5s ease-in-out infinite alternate;
   -moz-animation: neon2 0.5s ease-in-out infinite alternate;
   animation: neon2 0.5s ease-in-out infinite alternate;
