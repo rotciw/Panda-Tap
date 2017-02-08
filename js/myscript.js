@@ -279,7 +279,8 @@ $(document).ready(function(){
         player.money=player.money+player.moneyPerClick;  
         player.totalMoney=player.totalMoney+player.moneyPerClick;
       
-        
+   
+
         var money =  millionizeUpgrades(player.moneyPerClick.toFixed(0));
         var obj = $("#displayNum").clone();
     $("body").append(obj);
@@ -290,8 +291,13 @@ $(document).ready(function(){
     obj.animate({"opacity": 0, "top": "-=40px"}, 500, "linear", function() {
 		$(this).remove();
         });	
+      
     });
-    
+      $("#makeMon, #boss").keydown(function(event){
+        if (event.keyCode == 13 || event.keyCode == 32 || event.charCode == 32) { 
+            return false;            
+        }       
+    });
   
     //list all upgrade classes set with; name, how many times upgraded, set at 0, the base cost and the income
    
@@ -779,8 +785,7 @@ toastr.options = {
 
 
 
-function makeNewPosition(){
-    
+function makeNewPosition(){  
     // Get viewport dimensions (remove the dimension of the div)
     var h = $(".boss").height() -190;
     var w = $(".boss").width() -190 ;
@@ -1066,17 +1071,6 @@ if (gf.timesUp >= 10){
            if(localStorage.scrollPosition) {
       $(".scroll2").scrollTop(localStorage.getItem("scrollPosition2"));
    }
-        
-        //var money = player.money;
-         //Unfinished save
-//  $("#save").click(function(){
-     
-    
- //localStorage.setItem("player", JSON.stringify(player));
-      
- // });
-  //  var savegame = JSON.parse(localStorage.getItem("player"));
-    
-  //  if (typeof savegame.player !== "undefined") player = savegame.player;
+
     }
 });
