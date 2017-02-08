@@ -18,7 +18,7 @@ $(document).ready(function(){
         this.dmg = dmg;
         this.bonusMon = bonusMon;
     }
-    var player = new Player("Hello", 0,0,0,1,1,0);
+    var player = new Player("Hello", 1000,0,0,1,1,0);
     //making the boss class
     function Boss (name, hp, timer, kills, maxhp, speed){
         this.name = name;
@@ -287,8 +287,8 @@ $(document).ready(function(){
     obj.html("+"+money);
     obj.css('position','absolute');
 	obj.offset({left: e.pageX-10, top: e.pageY-25});
-    obj.animate({"top": "-=40px"}, 200, "linear");
-    obj.animate({"opacity": 0, "top": "-=40px"}, 500, "linear", function() {
+    obj.animate({"top": "-=40px"}, 100, "linear");
+    obj.animate({"opacity": 0, "top": "-=40px"}, 200, "linear", function() {
 		$(this).remove();
         });	
       
