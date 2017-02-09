@@ -18,7 +18,7 @@ $(document).ready(function(){
         this.dmg = dmg;
         this.bonusMon = bonusMon;
     }
-    var player = new Player("Hello", 1000,0,0,1,1,0);
+    var player = new Player("Hello", 0,0,0,1,1,0);
     //making the boss class
     function Boss (name, hp, timer, kills, maxhp, speed){
         this.name = name;
