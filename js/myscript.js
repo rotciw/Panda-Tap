@@ -286,9 +286,8 @@ $(document).ready(function(){
     $("body").append(obj);
     obj.html("+"+money);
     obj.css('position','absolute');
-	obj.offset({left: e.pageX-10, top: e.pageY-25});
-    obj.animate({"top": "-=40px"}, 100, "linear");
-    obj.animate({"opacity": 0, "top": "-=40px"}, 200, "linear", function() {
+	obj.offset({left: e.pageX-10, top: e.pageY-55});
+    obj.animate({"top": "-=55px"}, 100, "linear", function() {
 		$(this).remove();
         });	
       
