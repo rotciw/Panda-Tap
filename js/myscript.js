@@ -931,18 +931,112 @@ $("#startBF").click(function(){
     bossTimer: boss.timer,
     bossKills: boss.kills,
     bossPerc: boss.perc,
-  
-    
    }
+     
+   
 localStorage.setItem("save",JSON.stringify(save));
   var scrollPosition = $(".scroll").scrollTop();
       localStorage.setItem("scrollPosition", scrollPosition);
 
   var scrollPosition2 = $(".scroll2").scrollTop();
       localStorage.setItem("scrollPosition2", scrollPosition2);
-
+ 
 });
+    setInterval(function(){
+    var save = {
+    //PLAYER
+    money: player.money,
+    dmg: player.dmg,
+    monClick: player.moneyPerClick,
+    //Income
+    moneyPerSec: player.moneyPerSec,
+    //Lazy Panda   
+    lazyIncome: lazyPanda.income,
+    lazyCost: lazyPanda.cost,
+    lazyUpg: lazyPanda.timesUpg,
+    //Working Panda
+    workingIncome: workingPanda.income,
+    workingCost: workingPanda.cost,
+    workingUpg: workingPanda.timesUpg,
+    //Rice Farm
+    riceIncome: riceFarm.income,
+    riceCost: riceFarm.cost,
+    riceUpg: riceFarm.timesUpg,
+    // Rice Lab   
+    riceLabIncome: riceLab.income,
+    riceLabCost: riceLab.cost,
+    riceLabUpg: riceLab.timesUpg,
+      // Rice Factory   
+    riceFactoryIncome: riceFactory.income,
+    riceFactoryCost: riceFactory.cost,
+    riceFactoryUpg: riceFactory.timesUpg,
+      // Rice Bank   
+    riceBankIncome: riceBank.income,
+    riceBankCost: riceBank.cost,
+    riceBankUpg: riceBank.timesUpg,
+      // Panda Temple   
+    pandaTempleIncome: pandaTemple.income,
+    pandaTempleCost: pandaTemple.cost,
+    pandaTempleUpg: pandaTemple.timesUpg,
+      // Wizard Panda   
+    wizardPandaIncome: wizardPanda.income,
+    wizardPandaCost: wizardPanda.cost,
+    wizardPandaUpg: wizardPanda.timesUpg,
+      // Alchemy Panda   
+    alchemyPandaIncome: alchemyPanda.income,
+    alchemyPandaCost: alchemyPanda.cost,
+    alchemyPandaUpg: alchemyPanda.timesUpg,
+       // Bamboo Forest   
+    bambooForestIncome: bambooForest.income,
+    bambooForestCost: bambooForest.cost,
+    bambooForestUpg: bambooForest.timesUpg,
+       // Research Facility   
+    researchFacilityIncome: researchFacility.income,
+    researchFacilityCost: researchFacility.cost,
+    researchFacilityUpg: researchFacility.timesUpg,
+       // Panda School   
+    pandaSchoolIncome: pandaSchool.income,
+    pandaSchoolCost: pandaSchool.cost,
+    pandaSchoolUpg: pandaSchool.timesUpg,
+       // Ninje Panda   
+    ninjaPandaIncome: ninjaPanda.income,
+    ninjaPandaCost: ninjaPanda.cost,
+    ninjaPandaUpg: ninjaPanda.timesUpg,
+       // Hero upgrades!
+       // Hero upgrades 1
+    swordCost: sword.hcost,
+    swordUpg: sword.timesUp,
+    // Glory Road
+    gloryRoadCost: gloryRoad.hcost,
+    gloryRoadUpg: gloryRoad.timesUp,
+    // Hero upgrade 2
+    gfCost: gf.hcost,
+    gfUpg: gf.timesUp,
+    //Hero upgrade 3
+    senseiCost: sensei.hcost,
+    senseiUpg: sensei.timesUp,
+     //Hero upgrade 4
+    clickbetterCost: clickbetter.hcost,
+    clickbetterUpg: clickbetter.timesUp,
+     //Hero upgrade 5
+    clickpercCost: clickperc.hcost,
+    clickpercUpg: clickperc.timesUp,
+       
+    name: player.name,
+    upgrade: Upgrade.income,
+    //Boss
+    bossHp: boss.hp,
+    bossMaxHp: boss.maxhp,
+    bossTimer: boss.timer,
+    bossKills: boss.kills,
+    bossPerc: boss.perc,
+    }
+   
         
+localStorage.setItem("save",JSON.stringify(save));
+ },60000);
+        
+      
 window.onload = function (){
 
 var savegame = JSON.parse(localStorage.getItem("save"));
