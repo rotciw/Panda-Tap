@@ -1,4 +1,4 @@
-# pandatap
+# Panda Tap
 Panda Tap - Incremental game written in Javascript.
 Incremental game with a battle system.
 
