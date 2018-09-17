@@ -13,5 +13,4 @@ Instructions:
 Note:
 - Only optimized for Google Chrome
 
-
-Made 2016/2017
+#https://folk.ntnu.no/wictorz/
