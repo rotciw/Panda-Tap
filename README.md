@@ -11,6 +11,6 @@ Instructions:
 - Run index.html
 
 Note:
-- Only optimized for Google Chrome
+- Only tested and optimized for Google Chrome
 
-#https://folk.ntnu.no/wictorz/
+#http://folk.ntnu.no/wictorz/Pandatap/
