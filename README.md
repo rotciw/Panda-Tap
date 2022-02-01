@@ -13,4 +13,5 @@ Instructions:
 Note:
 - Only tested and optimized for Google Chrome
 
-#http://folk.ntnu.no/wictorz/Pandatap/
+# http://pandatap.wictor.no/
+# http://folk.ntnu.no/wictorz/Pandatap/
